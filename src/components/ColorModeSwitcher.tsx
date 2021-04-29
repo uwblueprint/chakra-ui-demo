@@ -1,3 +1,4 @@
+/* This component is provided in the Chakra-UI CRA template */
 import * as React from "react"
 import {
   useColorMode,
