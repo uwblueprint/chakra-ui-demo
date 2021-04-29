@@ -1,59 +1,51 @@
-This project was bootstrapped with
-[Create React App](https://github.com/facebook/create-react-app).
+# Chakra UI Demo
 
-## Available Scripts
+This is a showcase of using the [Chakra UI](https://chakra-ui.com/) component library.
 
-In the project directory, you can run:
+## Why ChakraUI?
 
-### `yarn start`
+Material UI or Bootstrap have long been the go-to for bootstrapping a frontend, but (in my opinion), these libraries are outdated and have a heavy, cumbersome API. Here are some reasons to use Chakra:
 
-Runs the app in the development mode.<br /> Open
-[http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Simple, unopinionated components
 
-The page will reload if you make edits.<br /> You will also see any lint errors
-in the console.
+- It's a component library so you get your typical components like `Container` and `Button` out of the box, but you also get more advanced components like `Modals`, `Toasts`, `Tooltips` and more out of the box!
+- It's unopinionated, so you don't get intrusive styling that's impossible to remove... _cough Material UI cough_
+- Places a huge emphasis on simple, easy-to-use component API
 
-### `yarn test`
+### It's also a styling system
 
-Launches the test runner in the interactive watch mode.<br /> See the section
-about
-[running tests](https://facebook.github.io/create-react-app/docs/running-tests)
-for more information.
+Perhaps the best part of Chakra is that it's also a styling system. It makes it incredibly easy to style your components according to a design system — check out the two themes I've implemented in the demo! With just a few lines of code, you can theme your entire application's color, border outlines, hover effects, etc. No need for overriding css variables, nesting CSS classes, CSS mixins, or any of that!
 
-### `yarn build`
+If you don't like CSS (I mean, who does?), you'll love Chakra. You might notice there's not a single line of CSS in this demo app. No "JSS" either.
 
-Builds the app for production to the `build` folder.<br /> It correctly bundles
-React in production mode and optimizes the build for the best performance.
+### Fantastic documentation
 
-The build is minified and the filenames include the hashes.<br /> Your app is
-ready to be deployed!
+Fast with tons of examples and inline editing of code samples! Try it for yourself: https://chakra-ui.com/
 
-See the section about
-[deployment](https://facebook.github.io/create-react-app/docs/deployment) for
-more information.
+> _If only these docs were even half as good as Chakra's docs..._
+>
+> — A BP developer after trying to read documentation after using Chakra
 
-### `yarn eject`
+### Accessible
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Chakra strictly follows WAI-ARIA standards for all components. You don't need to remember to add `aria` tags everywhere, and the Chakra docs also include sections on accessibility for all relevant components. This is a big benefit of using a component library over a CSS library like `Tailwind` or `Bulma`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can
-`eject` at any time. This command will remove the single build dependency from
-your project.
+### Modern
 
-Instead, it will copy all the configuration files and the transitive
-dependencies (webpack, Babel, ESLint, etc) right into your project so you have
-full control over them. All of the commands except `eject` will still work, but
-they will point to the copied scripts so you can tweak them. At this point
-you’re on your own.
+- It's written in TypeScript, so you get great IntelliSense
+- Has dark mode support out of the box
+- It uses `hooks` and `ContextProviders` instead of `HOCs`.
+- Complies with `React.StrictMode`
+- Works out of the box with server-side rendering (SSR) like `NextJS`, no special tricks needed to "rehydrate" the stylesheet.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for
-small and middle deployments, and you shouldn’t feel obligated to use this
-feature. However we understand that this tool wouldn’t be useful if you couldn’t
-customize it when you are ready for it.
+## Development
 
-## Learn More
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can run `yarn start` to run the app in development mode, as well as all the other CRA commands.
 
-You can learn more in the
-[Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Bootstrapping a new Chakra app
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can check out https://chakra-ui.com/docs/getting-started. They offer a `Create React App` template!
+
+## Examples
+
+Well, this repo is a great example. [Building Up](https://github.com/uwblueprint/building-up-client) was built on Chakra (not a single line of CSS to be found in here!)
