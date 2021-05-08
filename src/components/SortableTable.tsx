@@ -71,6 +71,7 @@ export function SortableTable() {
                 <Th
                   {...column.getHeaderProps(column.getSortByToggleProps())}
                   isNumeric={column.isNumeric}
+                  _hover={{ bg: "gray.200" }}
                 >
                   {column.render("Header")}
                   <chakra.span pl="4">
