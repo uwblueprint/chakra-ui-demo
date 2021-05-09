@@ -14,7 +14,12 @@ const styles: Styles = {
 }
 
 const theme = extendTheme(
-  { styles, colors, components: { Heading, Button } },
+  {
+    styles,
+    colors,
+    components: { Heading, Button },
+    fonts: { heading: "Lobster" },
+  },
   withDefaultColorScheme({ colorScheme: "brand" })
 )
 

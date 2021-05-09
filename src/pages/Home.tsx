@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from "react"
 import {
   Box,
   Grid,
@@ -11,17 +11,19 @@ import {
   Button,
   HStack,
   useColorModeValue,
-} from "@chakra-ui/react";
-import { useClientWidth } from "hooks/use-client-width";
-import { ContentContainer } from "components";
+} from "@chakra-ui/react"
+import { useClientWidth } from "hooks/use-client-width"
+import { ContentContainer } from "components"
+import { FaGithub, FaVideo } from "react-icons/fa"
+import { ViewIcon } from "@chakra-ui/icons"
 
 const GridLayout = forwardRef<GridProps, "div">((props, ref) => (
   <Grid gridTemplateColumns="100px 1fr" {...props} ref={ref} />
-));
+))
 
 const Header = () => {
-  const { width } = useClientWidth();
-  const bgColor = useColorModeValue("white", "brand.800");
+  const { width } = useClientWidth()
+  const bgColor = useColorModeValue("white", "brand.800")
 
   return (
     <Box
@@ -49,8 +51,8 @@ const Header = () => {
         h="0"
       />
     </Box>
-  );
-};
+  )
+}
 
 const Intro = () => (
   <Box>
@@ -60,7 +62,7 @@ const Intro = () => (
       create communities and promote public welfare
     </Text>
   </Box>
-);
+)
 
 const Contact = () => (
   <VStack align="flex-start" spacing={8} w="50%">
@@ -78,7 +80,7 @@ const Contact = () => (
       </Button>
     </HStack>
   </VStack>
-);
+)
 
 export const Home = () => {
   return (
@@ -95,9 +97,41 @@ export const Home = () => {
               <Button variant="ghost">Button</Button>
               <Button variant="link">Button</Button>
             </HStack>
+            <HStack spacing={4}>
+              <Button
+                as="a"
+                href="https://github.com/uwblueprint/chakra-ui-demo"
+                target="_blank"
+                leftIcon={<FaGithub />}
+                colorScheme="gray"
+                variant="outline"
+              >
+                GitHub
+              </Button>
+              <Button
+                as="a"
+                href="https://codesandbox.io/s/bp-chakra-ui-demo-j7o2z?file=/src/App.tsx"
+                target="_blank"
+                leftIcon={<ViewIcon />}
+                colorScheme="gray"
+                variant="outline"
+              >
+                CodeSandbox
+              </Button>
+              <Button
+                as="a"
+                href="https://codesandbox.io/s/bp-chakra-ui-demo-j7o2z?file=/src/App.tsx"
+                target="_blank"
+                leftIcon={<FaVideo />}
+                colorScheme="gray"
+                variant="outline"
+              >
+                Demo
+              </Button>
+            </HStack>
           </VStack>
         </GridLayout>
       </ContentContainer>
     </VStack>
-  );
-};
+  )
+}

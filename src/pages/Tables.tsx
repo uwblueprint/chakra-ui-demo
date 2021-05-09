@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import {
   Table,
   TableCaption,
@@ -11,9 +11,9 @@ import {
   VStack,
   Box,
   Heading,
-} from "@chakra-ui/react";
+} from "@chakra-ui/react"
 
-import { ContentContainer, SortableTable } from "components";
+import { ContentContainer, SortableTable } from "components"
 
 const SimpleTable = () => {
   return (
@@ -54,8 +54,8 @@ const SimpleTable = () => {
         </Tfoot>
       </Table>
     </Box>
-  );
-};
+  )
+}
 
 const StripedTable = () => (
   <Box w="100%">
@@ -95,7 +95,7 @@ const StripedTable = () => (
       </Tfoot>
     </Table>
   </Box>
-);
+)
 
 export const Tables = () => {
   return (
@@ -106,5 +106,5 @@ export const Tables = () => {
         <SortableTable />
       </VStack>
     </ContentContainer>
-  );
-};
+  )
+}

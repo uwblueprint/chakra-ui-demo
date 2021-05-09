@@ -11,6 +11,7 @@ import {
   Box,
   Heading,
   chakra,
+  Link,
 } from "@chakra-ui/react"
 import { TriangleDownIcon, TriangleUpIcon } from "@chakra-ui/icons"
 import { useTable, useSortBy } from "react-table"
@@ -62,7 +63,10 @@ export function SortableTable() {
 
   return (
     <Box w="100%">
-      <Heading>Sortable Table (react-table)</Heading>
+      <Heading>
+        Sortable Table (
+        <Link to="https://react-table.tanstack.com/">with react-table</Link>)
+      </Heading>
       <Table {...getTableProps()}>
         <Thead>
           {headerGroups.map((headerGroup) => (
@@ -106,6 +110,13 @@ export function SortableTable() {
           })}
         </Tbody>
       </Table>
+      <Link
+        to="https://chakra-ui.com/guides/integrations/with-react-table"
+        mt="4"
+        display="block"
+      >
+        Read the docs: Chakra UI + React Table
+      </Link>
     </Box>
   )
 }
