@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import {
   Modal,
   ModalOverlay,
@@ -39,10 +39,11 @@ import {
   PopoverHeader,
   PopoverTrigger,
   Portal,
-} from "@chakra-ui/react";
+  Text,
+} from "@chakra-ui/react"
 // @ts-ignore
-import Lorem from "react-lorem-component";
-import { ContentContainer } from "components";
+import Lorem from "react-lorem-component"
+import { ContentContainer } from "components"
 import {
   AddIcon,
   ChevronDownIcon,
@@ -51,13 +52,13 @@ import {
   HamburgerIcon,
   PhoneIcon,
   RepeatIcon,
-} from "@chakra-ui/icons";
+} from "@chakra-ui/icons"
 
 function Drawers() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onOpen, onClose } = useDisclosure()
   const [placement, setPlacement] = React.useState<SlideOptions["direction"]>(
     "right"
-  );
+  )
 
   return (
     <Box>
@@ -85,7 +86,7 @@ function Drawers() {
         </DrawerOverlay>
       </Drawer>
     </Box>
-  );
+  )
 }
 
 const ModalContents = ({ onClose }: { onClose: () => void }) => {
@@ -107,8 +108,8 @@ const ModalContents = ({ onClose }: { onClose: () => void }) => {
         </ModalFooter>
       </ModalContent>
     </>
-  );
-};
+  )
+}
 
 const Popovers = () => {
   return (
@@ -139,8 +140,8 @@ const Popovers = () => {
         </Popover>
       </HStack>
     </Box>
-  );
-};
+  )
+}
 
 const Menus = () => {
   return (
@@ -192,23 +193,27 @@ const Menus = () => {
         </Menu>
       </HStack>
     </Box>
-  );
-};
+  )
+}
 
 export const Overlays = () => {
   const {
     isOpen: modalIsOpen,
     onOpen: modalOnOpen,
     onClose: modalOnClose,
-  } = useDisclosure();
+  } = useDisclosure()
   const {
     isOpen: centeredIsOpen,
     onOpen: centeredOnOpen,
     onClose: centeredOnClose,
-  } = useDisclosure();
+  } = useDisclosure()
 
   return (
     <ContentContainer py={20} h="100%">
+      <Text fontWeight="bold" mb="4">
+        Note: most of these overlays DO NOT work in CodeSandbox. Run the app
+        locally or use the Netlify demo instead!
+      </Text>
       <VStack align="flex-start" spacing={20}>
         <Box>
           <Heading mb={4}>Modals</Heading>
@@ -228,5 +233,5 @@ export const Overlays = () => {
         <ModalContents onClose={centeredOnClose} />
       </Modal>
     </ContentContainer>
-  );
-};
+  )
+}

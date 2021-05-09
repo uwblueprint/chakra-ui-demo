@@ -1,14 +1,16 @@
 # Chakra UI Demo
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e0a80d51-9550-4e31-bbdb-fd89d99c997d/deploy-status)](https://app.netlify.com/sites/blueprint-chakra-ui-demo/deploys)
+
 This is a showcase of using the [Chakra UI](https://chakra-ui.com/) component library.
 
-**[Watch a 1 min video demo][loom]**
-
-**[Try out the interactive CodeSandbox][codesandbox]**
+- **[Check it out][netlify]**
+- **[Watch a 2 min video demo][loom]**
+- **[Try out the interactive CodeSandbox][codesandbox]**
 
 ## Why Chakra UI?
 
-`Material UI` or `Bootstrap` have long been the go-to for bootstrapping a frontend, but (in my opinion), these libraries are outdated and have a heavy, cumbersome API. Here are some reasons to use Chakra:
+`Material UI` or `Bootstrap` have long been the go-to for bootstrapping a frontend, but (in my opinion), these libraries are outdated and have a heavy, cumbersome API with messy documentation. Here are some reasons to use Chakra:
 
 ### Simple, unopinionated components
 
@@ -56,7 +58,8 @@ In terms of learning Chakra, their docs have amazing examples that you can edit 
 
 ## Examples
 
-The BP project [Building Up](https://github.com/uwblueprint/building-up-client) was built on Chakra (not a single line of CSS to be found in here!). Check out the repo if you're interested! Our devs all really enjoyed using Chakra, especially compared to previous libraries they've used like Material UI.
+The Blueprint project [Building Up](https://github.com/uwblueprint/building-up-client) was built on Chakra (not a single line of CSS to be found in here!). Check out the repo if you're interested. Our devs all really enjoyed using Chakra, especially compared to previous libraries they've used like Material UI.
 
-[codesandbox]: https://codesandbox.io/s/bp-chakra-ui-demo-j7o2z?file=/src/App.tsx
-[loom]: todo
+[codesandbox]: https://codesandbox.io/s/github/uwblueprint/chakra-ui-demo
+[loom]: https://www.loom.com/share/3fbc859fd1344afeb7c9f7daed0f155f
+[netlify]: https://blueprint-chakra-ui-demo.netlify.app/

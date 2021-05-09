@@ -110,7 +110,7 @@ export const Home = () => {
               </Button>
               <Button
                 as="a"
-                href="https://codesandbox.io/s/bp-chakra-ui-demo-j7o2z?file=/src/App.tsx"
+                href="https://codesandbox.io/s/github/uwblueprint/chakra-ui-demo"
                 target="_blank"
                 leftIcon={<ViewIcon />}
                 colorScheme="gray"
@@ -120,7 +120,7 @@ export const Home = () => {
               </Button>
               <Button
                 as="a"
-                href="https://codesandbox.io/s/bp-chakra-ui-demo-j7o2z?file=/src/App.tsx"
+                href="https://www.loom.com/share/3fbc859fd1344afeb7c9f7daed0f155f"
                 target="_blank"
                 leftIcon={<FaVideo />}
                 colorScheme="gray"
